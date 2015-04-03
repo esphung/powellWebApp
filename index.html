@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<!--
+FILENAME:			index.html Powell WebApp Home Page
+AUTHOR:			ERIC SCOTT PHUNG
+PURPOSE:			Home page HTML5
+CREATED:		2015.04.01 (ESP)
+-->
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<title>Home Page | Powell WebApp</title>
+		<!-- Bootstrap Core CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<!-- Custom CSS -->
+		<link href="css/business-casual.css" rel="stylesheet">
+		<!-- Fonts -->
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+		<link href="http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+		<!-- CUSTOM CSS -->
+		<link href="index.css" rel="stylesheet">
+		<!-- JAVASCRIPT AND JQUERY (Google hosted) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<!-- Local Javascript / jQuery Links -->
+		<script type="text/javascript" src="index.js"></script>
+
+
+	</head>
+	<body>
+		<div class="container">
+			<div class="brand">Powell WebApp</div>
+			<!--<div class="address-bar">420 University Blvd, Indianapolis, IN 46202 (317) 274-5555</div>-->
+			<!-- Navigation
+			<nav class="navbar navbar-default" role="navigation">
+				<div class="container">
+
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						</button>
+						 navbar-brand is hidden on larger screens, but visible when the menu is collapsed
+						<a class="navbar-brand" href="index.html">W B Powell</a>
+					</div>
+
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav">
+							<li>
+								<a href="index.html" class="homePageBtn">Home</a>
+							</li>
+							<li>
+								<a href="#article.html" class="articlePageBtn">article</a>
+							</li>
+
+							<li>
+								<a href="#blog.html">Blog</a>
+							</li>
+							<li>
+								<a href="#" class="submitBtn">Contact Me</a>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+
+			</nav>
+-->
+
+<br>
+
+<!-- JUMBO MEGA TRON FOR HOME BUTTON EVENT !!!!!!!! -->
+<div class="container homePage">
+  <div class="jumbotron">
+    <h1>Lorem ipsum Laborum quis aute.</h1>
+    <p>This page will grow as we add more and more components from Bootstrap...</p>
+  </div>
+  <p>This is a paragraph.</p>
+  <p>This is another paragraph.</p>
+  <p>This is a paragraph.</p>
+  <p>This is another paragraph.</p>
+</div>
+
+
+			<!-- DOCUMENTS 1 ===> 3  =======================================
+			<div class="container articlePageContent">
+				<div class="col-lg-12">
+					<hr>
+					<h2 class="intro-text text-center">Lorem
+					<strong>Article Gallery</strong>
+					</h2>
+					<hr>
+				</div>
+				<div class="col-sm-4 text-center">
+					<iframe data-toggle="modal" class="highlight img-responsive img-thumbnail" src="placeEssay.pdf"></iframe>
+					<h3>Hello Essay
+					<small>Lorem Ipsum</small>
+					</h3>
+				</div>
+				<div class="col-sm-4 text-center">
+					<div class="iframe-link">
+						<iframe data-toggle="modal" class="highlight img-responsive img-thumbnail" src="placeReport.pdf"></iframe>
+					<h3>Hello Report
+					<small>Lorem Ipsum</small>
+					</h3>
+					</div>
+
+				</div>
+				<div class="col-sm-4 text-center">
+
+					<iframe data-toggle="modal" class="highlight img-responsive img-thumbnail" src="placeNote.pdf"></iframe>
+					<h3>Hello Note
+					<small>Lorem Ipsum</small>
+					</h3>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+
+
+-->
+
+
+
+			<!-- ARTICLES WITH THUMBNAIL IMAGE LINK 4 ===> 6  ======================================  -->
+			<div class="container articlePageContent">
+				<div class="col-sm-4 text-center">
+					<img class="view-pdfOne highlight img-responsive img-thumbnail" src="placeScreenieEssay" alt="images" data-toggle="modal" data-target="#articleModal" data-whatever="wpowell7@ivytech.edu">
+					<h3>Caption
+					<small>Lorem Ipsum</small>
+					</h3>
+				</div>
+				<div class="col-sm-4 text-center">
+					<img class="view-pdfTwo highlight img-responsive img-thumbnail" src="placeScreenieReport" alt="image" data-toggle="modal" data-target="#articleModal" data-whatever="@mdo">
+					<h3>Caption
+					<small>Lorem Ipsum</small>
+					</h3>
+				</div>
+				<div class="col-sm-4 text-center">
+					<img class="view-pdfThree highlight img-responsive img-thumbnail" src="placeScreenieNote" alt="image" data-toggle="modal" data-target="#articleModal" data-whatever="@mdo">
+					<h3>Caption
+					<small>Lorem Ipsum</small>
+					</h3>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+
+
+<!--  700x750 is 1/2 MAC SCREeN -->
+
+
+			<!-- EMAIL MODAL BUTTON TRIGGER !!!  ============================-->
+			<!-- Button trigger modal -->
+			<div class="container">
+				<button type="button" class="btnNotify btn btn-warning btn-lg" data-toggle="modal" data-target="#myModal">
+				Suscribe Button!
+				</button>
+			</div>
+			<br>
+			</div><!-- END BODY DIV -->
+
+
+
+
+
+
+			<!-- SUBSCRIBE BUTTON MODAL BEGIN Modal =================== -->
+			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							<h4 class="modal-title" id="myModalLabel">Email Me</h4>
+						</div>
+						<div class="modal-body">
+							<div class="container-fluid">
+								<form>
+									<div class="form-group">
+										<br>
+										<label for="exampleInputEmail1">Email address</label>
+										<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+									</div>
+								</form>
+								</div><!-- END FORM DIV -->
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								<button type="submit" class="hideBtn submitBtn btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Submit</button>
+							</div>
+						</div>
+					</div>
+					</div><!-- END Modal -->
+
+
+
+
+
+
+												<footer>
+													<div class="container">
+														<div class="col-lg-12 text-center">
+															<p>Copyright &copy; Powell WebApp 2015</p>
+														</div>
+													</div>
+												</footer>
+												<!-- jQuery IF GOOGLE LIBS DON'T LOAD! -->
+												<script src="js/jquery.js"></script>
+												<!-- Bootstrap Core JavaScript -->
+												<script src="js/bootstrap.min.js"></script>
+											</body>
+										</html>
