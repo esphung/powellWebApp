@@ -15,15 +15,27 @@ $(document).ready(function(argument){
 (function(a){a.createModal=function(b){defaults={title:"",message:"Your Message Goes Here!",closeButton:true,scrollable:false};var b=a.extend({},defaults,b);var c=(b.scrollable===true)?'style="max-height: 420px;overflow-y: auto;"':"";html='<div class="modal fade" id="myModal">';html+='<div class="modal-dialog">';html+='<div class="modal-content">';html+='<div class="modal-header">';html+='<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>';if(b.title.length>0){html+='<h4 class="modal-title">'+b.title+"</h4>"}html+="</div>";html+='<div class="modal-body" '+c+">";html+=b.message;html+="</div>";html+='<div class="modal-footer">';if(b.closeButton===true){html+='<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>'}html+="</div>";html+="</div>";html+="</div>";html+="</div>";a("body").prepend(html);a("#myModal").modal().on("hidden.bs.modal",function(){a(this).remove()})}})(jQuery);
 
 /*
-* Here is how you use it 3x DOCUMENTS
+* Here is how you use it ================================
 */
 
+
+// static variables
+// var pdfTwo = "";
+// var pdfThree = "";
+// var pdfFour = "";
+// var pdfFive = "";
+// var pdfSix = "";
+var pdfOne = "docs/exhibit001settlementstatement.pdf";
+var pdfTwo = "docs/exhibit002directpaychecksEMC.pdf";
+
+// ...
+
 // PDF ONE MODAL PDF VIEWER
-$(function(){
+function pdfModalBodyEvent(filename){
 	// PDF ONE
 	$('.view-pdfOne').on('click',function(){
-		var pdf_linkOne = "http://cs.iupui.edu/~esphung/powellWebApp/placeEssay.pdf"; // SOURCE PDF HERE!!!
-		var iframe = '<div class="iframe-container"><iframe src="'+pdf_linkOne+'"></iframe></div>'
+		//var pdf_linkOne = "http://cs.iupui.edu/~esphung/powellWebApp/placeEssay.pdf"; // SOURCE PDF HERE!!!
+		var iframe = '<div class="iframe-container"><iframe zoom="page-width" src="'+filename+'"></iframe></div>'
 		$.createModal({
 		title:'My Title',
 		message: iframe,
@@ -32,13 +44,18 @@ $(function(){
 		});
 		return false;
     });
-}) // end pdf one modal
+} // end pdf one modal
+
+pdfModalBodyEvent(pdfOne);
+
+
+
 
 // PDF TWO MODAL PDF VIEWER
 $(function(){
 	// PDF TWO
 	$('.view-pdfTwo').on('click',function(){
-		var pdf_linkTwo = "http://cs.iupui.edu/~esphung/powellWebApp/placeReport.pdf"; // SOURCE PDF HERE!!!
+		var pdf_linkTwo = "docs/exhibit002directpaychecksEMC.pdf"; // SOURCE PDF HERE!!!
 		var iframe = '<div class="iframe-container"><iframe src="'+pdf_linkTwo+'"></iframe></div>'
 		$.createModal({
 		title:'My Title',
@@ -50,11 +67,14 @@ $(function(){
     });
 }) // end pdf two modal
 
+
+
+
 // PDF THREE MODAL PDF VIEWER
 $(function(){
 	// PDF THREE
 	$('.view-pdfThree').on('click',function(){
-		var pdf_linkThree = "http://cs.iupui.edu/~esphung/powellWebApp/placeNote.pdf"; // SOURCE PDF HERE!!!
+		var pdf_linkThree = "docs/exhibit003counterclaim9.11.06.pdf"; // SOURCE PDF HERE!!!
 		var iframe = '<div class="iframe-container"><iframe src="'+pdf_linkThree+'"></iframe></div>'
 		$.createModal({
 		title:'My Title',
@@ -65,6 +85,27 @@ $(function(){
 		return false;
     });
 }) // end pdf three modal
+
+
+
+// PDF Twelve MODAL PDF VIEWER
+$(function(){
+	// PDF Twelve
+	$('.view-pdfFour').on('click',function(){
+		var pdf_linkTwelve = "docs/exhibit004modificationsigned.11.14.06.pdf"; // SOURCE PDF HERE!!!
+		var iframe = '<div class="iframe-container"><iframe src="'+pdf_linkTwelve+'"></iframe></div>'
+		$.createModal({
+		title:'My Title',
+		message: iframe,
+		closeButton:true,
+		scrollable:false
+		});
+		return false;
+    });
+}) // end pdf Twelve modal
+
+
+
 
 	//$(".homePage").hide(50); // hide page stuff
 	//$(".articlePageContent").hide(50); // hide page stuff
